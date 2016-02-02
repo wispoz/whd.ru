@@ -1,0 +1,12 @@
+{
+  "name": "whodrive.ru",
+  "app_id": "b136adb2",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
