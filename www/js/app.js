@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers','base64'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -40,6 +40,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: "/login",
         templateUrl: "templates/login.html",
         controller: 'LoginCtrl'
+      })
+    .state('registration', {
+        url: "/registration",
+        templateUrl: "templates/registration.html",
+        controller: 'RegistrationCtrl'
+      })
+    .state('routes', {
+        url: "/routes",
+        templateUrl: "templates/routes.html",
+        controller: 'RoutesCtrl'
       })
 
     // setup an abstract state for the tabs directive
@@ -102,6 +112,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
     // if none of the above states are matched, use this as the fallback
     //$urlRouterProvider.otherwise('/tab/dash');
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/routes');
 
 });
