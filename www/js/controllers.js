@@ -13,6 +13,10 @@ angular.module('starter.controllers', [])
     error(function(data, status, headers, config) {
         
     });
+    
+    $scope.routeClick = function(index) {
+            console.log($scope);
+    }
 })
 
 .controller('LoginCtrl', function($scope, $state,$http) {

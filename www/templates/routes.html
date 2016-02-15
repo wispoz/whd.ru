@@ -23,8 +23,16 @@
                                             San Francisco
                                         </p>
                                     </div>
-                                    <div class="item item-image">
-                                       ----------Ю
+                                    <div class="item item-image" ng-click="routeClick({{$index}})">
+                                    <div class="animate-switch-container" ng-switch on="selection">
+                                        <div id="row_{{$index}}_head">
+                                            <a > <i class="round-circle">{{route.human_diff}}</i></a>    
+                                        </div>
+                                                                    
+                                        <div id="row_{{$index}}_content">
+                                                123213
+                                        </div>
+                                      </div>
                                     </div>
                                     <div class="item tabs tabs-secondary tabs-icon-left">
                                         <a class="tab-item" href="#">
